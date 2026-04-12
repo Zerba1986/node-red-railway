@@ -1,9 +1,8 @@
 {
   "name": "node-red-app",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "node-red"
+    "start": "node-red -p $PORT -u /data -s settings.js"
   },
   "dependencies": {
     "node-red": "^3.1.0"
