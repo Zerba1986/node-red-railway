@@ -1,7 +1,6 @@
 FROM nodered/node-red:latest
 
-WORKDIR /data
-
+# Copia apenas os arquivos de configuração
 COPY data /data
 
-CMD ["sh", "-c", "node-red -p $PORT -u /data -s /data/settings.js"]
+# Usa o entrypoint padrão da imagem (IMPORTANTE)
