@@ -1,4 +1,6 @@
 module.exports = {
+    credentialSecret: "minha-chave-secreta",
+
     adminAuth: {
         type: "credentials",
         users: [{
