@@ -1,10 +1,5 @@
 {
-  "name": "node-red-app",
+  "name": "node-red",
   "version": "1.0.0",
-  "scripts": {
-    "start": "node-red -p $PORT -u ./data -s ./data/settings.js"
-  },
-  "dependencies": {
-    "node-red": "^3.1.0"
-  }
+  "private": true
 }
