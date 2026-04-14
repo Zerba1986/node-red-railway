@@ -1,6 +1,8 @@
 FROM nodered/node-red:latest
 
-# Copia apenas os arquivos de configuração
 COPY data /data
 
-# Usa o entrypoint padrão da imagem (IMPORTANTE)
+# 🔥 ESSA LINHA É O SEGREDO
+ENV PORT=1880
+
+CMD ["sh", "-c", "node-red -p $PORT -u /data -s /data/settings.js"]
